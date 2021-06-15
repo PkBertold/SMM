@@ -17,3 +17,8 @@ th {
     background-color: blue;
 
 }
+
+.blackline {
+    height: 2px;
+    background-color: black;
+}
