@@ -47,11 +47,14 @@ $(document).ready(function(){
 });
 
 /*
+Ez volt az első teszt sor...
+Most viszont jó elválasztóvonal az utolsó betű ID-ig :D
+
 $(document).ready(function(){
     $(".S").click(function(){ 
     $("#E").css("background-color", "yellow");
                             });
-                            });
+});
 */
 
 $(document).ready(function(){
