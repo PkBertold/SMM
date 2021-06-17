@@ -1,52 +1,73 @@
-$(document).ready(function(){
-    $(".S").click(function(){ 
-    $(".S").text("0");
-                            });
-});
+var value = 0;
+parseInt(value)
+console.log(value)
+console.log(typeof value)
 
-$(document).ready(function(){
-    $(".E").click(function(){ 
-    $(".E").text("0");
-                            });
-});
+function add() {
+    if(value>=9){
+      value = 0;
+    } else {
+    value++;
+    }
+    document.getElementById("E").innerHTML = value;
+}
 
-$(document).ready(function(){
-    $(".N").click(function(){ 
-    $(".N").text("0");
-                            });
-});
 
-$(document).ready(function(){
-    $(".D").click(function(){ 
-    $(".D").text("0");
-                            });
-});
 
-$(document).ready(function(){
-    $(".M").click(function(){ 
-    $(".M").text("0");
-                            });
-});
+function szamlaloS(){
+    document.getElementById("S").innerHTML = add();    
+}
 
-$(document).ready(function(){
-    $(".O").click(function(){ 
-    $(".O").text("0");
-                            });
-});
+function szamlaloE(){
+    document.getElementById("E").innerHTML = add();
+}
 
-$(document).ready(function(){
-    $(".R").click(function(){ 
-    $(".R").text("0");
-                            });
-});
+function szamlaloN(){
+    document.getElementById("N").innerHTML = add();
+}
 
-$(document).ready(function(){
-    $(".Y").click(function(){ 
-    $(".Y").text("0");
-                            });
-});
+function szamlaloD(){
+    document.getElementById("D").innerHTML = add();
+}
+
+function szamlaloM(){
+    document.getElementById("M").innerHTML = add();
+}
+
+function szamlaloO(){
+    document.getElementById("O").innerHTML = add();
+}
+
+function szamlaloR(){
+    document.getElementById("R").innerHTML = add();
+}
+
+function szamlaloY(){
+    document.getElementById("Y").innerHTML = add();
+}
+
 
 /*
+var value = 0;
+
+if(value>9){
+    value = 0;
+    document.getElementById("field").innerHTML = value;
+}
+
+
+function add_checked() { 
+    if (value < 10) {  // handle cases 0-9
+        value++; 
+    } else {
+        value = 0;  // handle case 10
+    }
+};
+
+function add_limited() { value = (value + 1) % 11; };
+
+
+
 Ez volt az első teszt sor...
 Most viszont jó elválasztóvonal az utolsó betű ID-ig :D
 
@@ -56,30 +77,6 @@ $(document).ready(function(){
                             });
 });
 
-
-$(document).ready(function(){
-    $("#0").click(function(){ 
-    $(".0").int("1");
-                            });
-});
-
-$(document).ready(function(){
-    $("#1").click(function(){ 
-    $(".1").text("2");
-                            });
-});
-
-$(document).ready(function(){
-    $("#2").click(function(){ 
-    $(".2").text("3");
-                            });
-});
-
-$(document).ready(function(){
-    $("#3").click(function(){ 
-    $(".4").text("4");
-                            });
-});
 
 let x = 0;
 parseInt(x)
@@ -98,26 +95,48 @@ $(document).ready(function(){
                             });
 });
 
-*/
-let x = 0;
-parseInt(x)
 const add = (function () {
-    let counter = -1;
-    return function () {counter += 1; return counter;}
-})();
-  function szamlalo(){
-    document.getElementById("S").innerHTML = add();
-}
-
-/*
-
-  const add = (function () {
   let counter = 0;
   return function () {counter += 1; return counter;}
 })();
 
 function myFunction(){
   document.getElementById("demo").innerHTML = add();
+}
+
+// This seems good
+
+$("szamlalo").click(function() {
+
+    count -= 1;
+    if (count > 9) {
+        return false;
+    }
+    else if (count == 0) {
+    }
+    else {
+ //   document.getElementById("szamlalo").innerHTML = "0";
+    }
+    counter();
+});​
+
+
+   var reset= function(){
+    a = 0;
+    document.getElementById('Value').innerHTML = a;
+    }
+
+
+
+
+
+var reset = function() {
+    a = 0;
+    document.getElementById('Value').innerHTML = 0;
+    var resetButton = document.querySelector("#reset");
+resetButton.addEventListener("click", function() {
+    reset();
+})
 }
 
 */
